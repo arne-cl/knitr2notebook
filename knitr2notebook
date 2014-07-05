@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./rmd2md "$1" tmp_knitr_output.md
+notedown tmp_knitr_output.md | sed 's/%%r/%%R/' > "$2"
+rm tmp_knitr_output.md
