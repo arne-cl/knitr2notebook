@@ -8,4 +8,5 @@ rmd = paste("```\n%load_ext rpy2.ipython\n```\n\n",
   paste(readLines(args[1]), collapse = '\n'),
   collapse = '\n'
 )
-knit(text = rmd, output = args[2], quiet = TRUE)
+knit(text = rmd, output = args[2], quiet = FALSE)
+warnings()
