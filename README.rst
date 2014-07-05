@@ -14,8 +14,8 @@ Usage
 Dependencies
 ------------
 
-R
-knitr
-rpy2
-notedown
+- R
+- knitr
+- rpy2
+- notedown
 
